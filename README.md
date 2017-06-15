@@ -1,4 +1,5 @@
 Please download newsdata.sql
+The database file cannot upload to Github due to the file size.
 
 * View for total_views
 
