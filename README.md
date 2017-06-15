@@ -1,3 +1,5 @@
+Please download newsdata.sql
+
 * View for total_views
 
 ```CREATE VIEW total_views
