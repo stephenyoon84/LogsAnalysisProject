@@ -5,7 +5,7 @@ The database file cannot upload to Github due to the file size.
 * View for total_views
 
 ```CREATE VIEW total_views
-AS SELECT articles.title, count(*) AS views
+AS SELECT articles.title, author, count(*) AS views
 FROM articles JOIN log
 ON articles.slug = (regexp_split_to_array(path, E'/article/'))[2]
 WHERE path != '/'
