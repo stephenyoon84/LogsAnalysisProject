@@ -9,7 +9,7 @@ AS SELECT articles.title, author, count(*) AS views
 FROM articles JOIN log
 ON articles.slug = (regexp_split_to_array(path, E'/article/'))[2]
 WHERE path != '/'
-GROUP BY articles.title
+GROUP BY articles.title, author
 ORDER BY views DESC;
 ```
 
